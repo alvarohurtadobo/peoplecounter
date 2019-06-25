@@ -1,7 +1,8 @@
 # peoplecounter
 People counter algorithm for surveillance and bus entrance applications
 
-To setup your computer for dlib, run the next commands:
+To setup your linux computer for dlib, run the next commands:
+
 ```
 sudo apt-get update
 sudo apt-get install build-essential cmake -y
