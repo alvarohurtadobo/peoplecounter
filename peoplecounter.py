@@ -83,7 +83,7 @@ while True:
 	status = "Waiting"
 	rects = []
 
-	if totalFrames % 1 == 0:			# Change 1 for the frames to skip
+	if totalFrames % 4 == 0:			# Change 1 for the frames to skip
 		status = "Detecting"
 		trackers = []
 
@@ -176,7 +176,13 @@ while True:
 		writer.write(frame)
 
 	cv2.imshow("Ingreso", frame)
-	key = cv2.waitKey() & 0xFF
+	key = cv2.waitKey(1) & 0xFF
+
+	if key == ord("+"):
+		totalUp += 1
+
+	if key == ord("-"):
+		totalDown += 1
 
 	if key == ord("q"):
 		break
