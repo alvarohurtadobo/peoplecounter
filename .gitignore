@@ -1,3 +1,8 @@
+# Own ignores:
+videos/*
+output/*
+dlib-19.6/*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
